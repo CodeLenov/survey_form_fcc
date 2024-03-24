@@ -1,0 +1,41 @@
+body {
+	background-color: #55f;
+	color: #fff;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+}
+
+#title, #description {
+	text-align: center;
+}
+
+#survey-form {
+	background-color: #003;
+	width: 60%;
+	margin: auto;
+}
+
+p {
+	padding: 20px 0;
+}
+
+legend, select {
+	margin-left: 10%;
+	display: block;
+}
+
+#name, #email, #number, #dropdown, #textarea, button {
+	font-size: 24px;
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+select {
+	font-size: 24px;
+}
+
+button {
+	background-color: green;
+	font-size: 36px;
+}

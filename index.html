@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="styles.css"/>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Survey Form</title>
+</head>
+
+<body>
+
+<h1 id="title">Survey Form</h1>
+<p id="description"><em>freeCodeCamp</em></p>
+
+<form id="survey-form" action="">
+
+<p>
+	<label for="name" id="name-label" name="name">
+		<legend>Name</legend>
+		<input id="name" name="name" type="text" placeholder="Enter your name" required/>
+	</label>
+</p>
+
+<p>
+	<label for="email" id="email-label" name="email">
+		<legend>Email</legend>
+		<input id="email" name="email" type="email" pattern="[azAZ09]{4,}" placeholder="Enter your email" required/>
+	</label>
+</p>
+
+<p>
+	<label for="number" id="number-label" name="number">
+		<legend>Age</legend>
+		<input id="number" name="number" type="number" min="1" max="150" placeholder="From 1 to 150" required/>
+	</label>
+</p>
+
+<p>
+	<label for="dropdown" name="dropdown">
+		<legend>Which your current role?</legend>
+		<select id="dropdown" name="dropdown">
+			<option value="">(select current role)</option>
+			<option value="student_option">Student</option>
+			<option value="professional_option">Professional</option>
+			<option value="teacher_option">Teacher</option>
+			<option value="other_option">Other</option>
+		</select>
+	</label>
+</p>
+
+<p>
+	<label for="yes_radio">
+		<legend>Would you recommend freeCodeCamp to a friend?</legend>
+		<legend>
+			<input id="yes_radio" name="yes_radio" type="radio" value="yes_radio" checked/> Yes
+		</legend>
+	</label>
+	<label for="maybe_radio">
+		<legend>
+			<input id="maybe_radio" name="maybe_radio" type="radio" value="maybe_radio"/> Maybe
+		</legend>
+	</label>
+	<label for="not_sure_radio">
+		<legend>
+			<input id="not_sure_radio" name="not_sure_radio" type="radio" value="not_sure_radio"/> Not sure
+		</legend>
+	</label>
+	<label for="no_radio">
+		<legend>
+			<input id="no_radio" name="no_radio" type="radio" value="no_radio"/> No
+		</legend>
+	</label>
+</p>
+    
+<p>
+	<label for="html_checkbox" name="html_chekbox">
+		<legend>What would you like to see improved? <em>(You can check more one)</em></legend>
+		<legend>
+			<input id="html_checkbox" name="html_checkbox" type="checkbox" value="html_checkbox"/> HTML
+		</legend>
+	</label>
+	<label for="css_checkbox" name="css_checkbox">
+		<legend>
+			<input id="css_checkbox" name="css_checkbox" type="checkbox" value="css_checkbox"/> CSS
+		</legend>
+	</label>
+	<label for="javascript_checkbox" name="javascript_checkbox">
+		<legend>
+			<input id="javascript_checkbox" name="javascript_checkbox" type="checkbox" value="javascript_checkbox"/> JavaScript
+		</legend>
+	</label>
+	<label for="php_checkbox" name="php_checkbox">
+		<legend>
+			<input id="php_checkbox" name="php_checkbox" type="checkbox" value="php_checkbox"/> PHP
+		</legend>
+	</label>
+	<label for="sql_checkbox" name="sql_checkbox">
+		<legend>
+			<input id="sql_checkbox" name="sql_checkbox" type="checkbox" value="sql_checkbox"/> SQL
+		</legend>
+	</label>
+	<label for="python_checkbox" name="python_checkbox">
+		<legend>
+			<input id="python_checkbox" name="python_checkbox" type="checkbox" value="python_checkbox"/> Python
+		</legend>
+	</label>
+	<label for="java_checkbox" name="java_checkbox">
+		<legend>
+			<input id="java_checkbox" name="java_checkbox" type="checkbox" value="java_checkbox"/> Java
+		</legend>
+	</label>
+	<label for="git_checkbox" name="git_checkbox">
+		<legend>
+			<input id="git_checkbox" name="git_checkbox" type="checkbox" value="git_checkbox"/> Git
+		</legend>
+	</label>
+	<label for="animation_checkbox" name="animation_checkbox">
+		<legend>
+			<input id="animation_checkbox" name="animation_checkbox" type="checkbox" value="animation_checkbox"/> Animation
+		</legend>
+	</label>
+	<label for="game_development_checkbox" name="game_development_checkbox">
+		<legend>
+			<input id="game_development_checkbox" name="game_development_checkbox" type="checkbox" value="game_development_checkbox"/> Game Development
+		</legend>
+	</label>
+</p>
+
+<p>
+	<label for="textarea" name="textarea">
+		<legend>Any comments or suggestions?</legend>
+		<textarea id="textarea" name="textarea" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+	</label>
+</p>
+
+<p>
+	<button id="submit" name="submit" type="submit" value="Submit">Submit</button>
+</p>
+
+</form>
+
+</body>
+</html>
