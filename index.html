@@ -17,28 +17,28 @@
 <p>
 	<label for="name" id="name-label" name="name">
 		<legend>Name</legend>
-		<input id="name" name="name" type="text" placeholder="Enter your name" required/>
+		<input required id="name" name="name" type="text" placeholder="Enter your name" />
 	</label>
 </p>
 
 <p>
 	<label for="email" id="email-label" name="email">
 		<legend>Email</legend>
-		<input id="email" name="email" type="email" pattern="[azAZ09]{4,}" placeholder="Enter your email" required/>
+		<input required id="email" name="email" type="email" pattern="[azAZ09]{4,}" placeholder="Enter your email" />
 	</label>
 </p>
 
 <p>
 	<label for="number" id="number-label" name="number">
 		<legend>Age</legend>
-		<input id="number" name="number" type="number" min="1" max="150" placeholder="From 1 to 150" required/>
+		<input required id="number" name="number" type="number" min="1" max="150" placeholder="From 1 to 150" />
 	</label>
 </p>
 
 <p>
 	<label for="dropdown" name="dropdown">
 		<legend>Which your current role?</legend>
-		<select id="dropdown" name="dropdown">
+		<select required id="dropdown" name="dropdown">
 			<option value="">(select current role)</option>
 			<option value="student_option">Student</option>
 			<option value="professional_option">Professional</option>
@@ -52,7 +52,7 @@
 	<label for="yes_radio">
 		<legend>Would you recommend freeCodeCamp to a friend?</legend>
 		<legend>
-			<input id="yes_radio" name="radio" type="radio" value="yes_radio"/> Yes
+			<input required id="yes_radio" name="radio" type="radio" value="yes_radio"/> Yes
 		</legend>
 	</label>
 	<label for="maybe_radio">
